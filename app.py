@@ -12,6 +12,9 @@ import base64
 import uuid
 import re
 
+# Set environment variable to avoid tokenizers warning
+os.environ['TOKENIZERS_PARALLELISM'] = 'false'
+
 # LLM Provider imports
 import openai
 import anthropic
